@@ -51,7 +51,7 @@ function App() {
         <div className='flex-container'>
           {movieData.map((item) =>
             <div className="movie_item">
-              <img src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`} />
+              <img alt={"Image describing movie or tv show"} src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`} />
               <div className="movie_name">
                 {item.original_title ? item.original_title : item.original_name}
 

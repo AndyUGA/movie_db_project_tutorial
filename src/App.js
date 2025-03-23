@@ -14,7 +14,7 @@ function App() {
 
   async function getTrendingMovieData(type) {
     try {
-      const apiKey = '';
+      const apiKey = 'e595815097d490ac4fb87e302ed24323';
       let resp = await axios.get(`https://api.themoviedb.org/3/trending/${type}/day?api_key=${apiKey}&media_type=movie`);
       console.log(21, resp.data.results);
 
